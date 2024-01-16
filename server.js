@@ -3,7 +3,7 @@ import lighthouse from 'lighthouse';
 import express from 'express';
 
 const app = express();
-const port = 3005;
+const port = 3000;
 
 async function runLighthouse(url) {
   const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless'] });
